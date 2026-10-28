@@ -51,16 +51,16 @@ hazırlanmıştır ve bu proje [Semantic Versioning](https://semver.org/spec/v2.
 
 ### Eklendi
 - **Extended sürümü**: Store (Appx) uygulama taraması — Baidu Music,
-  Alice, Messenger ve diğer Baidu Store uygulamalarını tespit eder,
+  Messenger, Messenger ve diğer Baidu Store uygulamalarını tespit eder,
   `Remove-AppxPackage` ile kaldırır
 - **Extended sürümü**: `Program Files\Baidu\` altındaki tarayıcı dışı
-  ürün dizinleri taraması (Baidu Disk, Punto Switcher, IME, ...) —
+  ürün dizinleri taraması (Baidu Disk, Baidu IME Switcher, IME, ...) —
   kaldırmadan önce yedek
 - **Extended sürümü**: `%LOCALAPPDATA%\Baidu\` altındaki tarayıcı dışı
-  yerel veri taraması (Punto Switcher yerel verileri, Baidu Disk
+  yerel veri taraması (Baidu IME Switcher yerel verileri, Baidu Disk
   güncelleyicisi, Beta derlemeleri) — onaylı, kaldırmadan önce yedek
 - **Extended sürümü**: «Kill Processes» artık yalnızca tarayıcıyı değil,
-  tüm Baidu ürün süreçlerini (Baidu Disk, Punto Switcher, Store
+  tüm Baidu ürün süreçlerini (Baidu Disk, Baidu IME Switcher, Store
   uygulamaları) sonlandırır
 
 ## [2.5.0] - 2026-10-21
@@ -86,7 +86,7 @@ hazırlanmıştır ve bu proje [Semantic Versioning](https://semver.org/spec/v2.
   Prefetch / CrashDumps / WER izleri, Windows Defender istisnaları,
   özel klavye düzenleri (Baidu IME)
 - Onay mekanizması: kullanıcı verilerine dokunan bulgular (Baidu Disk
-  dosyaları, Punto Switcher geçmişi, eklentiler, çerezler, Defender
+  dosyaları, Baidu IME Switcher geçmişi, eklentiler, çerezler, Defender
   istisnaları) kaldırmadan önce açık ek onay gerektirir
 - `.lnk` bayt tespiti, hosts satır filtreleme, güvenlik duvarı çıktısı
   ayrıştırma ve onay öneki kapsamı için birim testler
@@ -95,8 +95,8 @@ hazırlanmıştır ve bu proje [Semantic Versioning](https://semver.org/spec/v2.
 
 ### Eklendi
 - 13.–15. ele geçirme vektörleri: Windows hizmetleri (kayıt defteri
-  tabanlı tarama, `sc stop` + `sc delete` ile kaldırma), Punto Switcher
-  (`punto` işaretiyle tespit), dosya ilişkilendirmeleri
+  tabanlı tarama, `sc stop` + `sc delete` ile kaldırma), Baidu IME Switcher
+  (`ime` işaretiyle tespit), dosya ilişkilendirmeleri
   (`FileExts\<ext>\UserChoice` ProgId taraması + kaldırma)
 - Tarama sonrası seçim diyaloğu: «hepsi ya da hiçbiri» yerine tam olarak
   hangi bulguların kaldırılacağını seçme
@@ -104,7 +104,7 @@ hazırlanmıştır ve bu proje [Semantic Versioning](https://semver.org/spec/v2.
   `%APPDATA%\AntiBaiduVanced\exclusions.json` içine kaydedilebilir —
   gelecekteki taramalar bunları otomatik olarak seçmez, ancak diyalogda
   seçilebilir kalırlar; hariç tutmalar diyalogdan sıfırlanabilir
-- Hariç tutma kalıcılığı ve Punto Switcher işareti için birim testler
+- Hariç tutma kalıcılığı ve Baidu IME Switcher işareti için birim testler
 
 ## [2.2.0] - 2026-10-20
 
@@ -144,7 +144,7 @@ hazırlanmıştır ve bu proje [Semantic Versioning](https://semver.org/spec/v2.
 ## [2.1.2] - 2026-10-20
 
 ### Değiştirildi
-- Uygulama başlığı «Удаление Яндекс» / «Remove Baidu» (ru/en/uk) olarak
+- Uygulama başlığı «Удаление Baidu» / «Remove Baidu» (ru/en/uk) olarak
   kısaltıldı
 - Alt bilgi sağ alt köşeye sabitlendi: yazar, sürüm ve tıklanabilir
   GitHub bağlantısı

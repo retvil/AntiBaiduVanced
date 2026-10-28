@@ -10,69 +10,69 @@
 ## [2.8.0] - 2026-10-22
 
 ### Добавлено
-- **Скан зоны IE (zone map)** — находит записи zone-map для доменов Яндекса
+- **Скан зоны IE (zone map)** — находит записи zone-map для доменов Baidu
   (остатки «надёжных сайтов»); удаление сносит поддерево домена (сначала экспорт)
-- **Скан RegisteredApplications** — находит записи Яндекса в метаданных
+- **Скан RegisteredApplications** — находит записи Baidu в метаданных
   приложений по умолчанию; удаление стирает значение (сначала экспорт)
-- **Скан MUICache** — находит следы запуска исполняемых файлов Яндекса;
+- **Скан MUICache** — находит следы запуска исполняемых файлов Baidu;
   удаление стирает значение кэша (сначала экспорт)
 - **Следы инсталляторов в %TEMP%** — scan_traces теперь также репортит
-  инсталляторы Яндекса, оставшиеся во временной папке пользователя
+  инсталляторы Baidu, оставшиеся во временной папке пользователя
 - **Каталоги продуктов per-user** — scan_product_dirs теперь также покрывает
-  `%LOCALAPPDATA%\Programs\Baidu*` (legacy-установки Яндекс Музыки /
-  Мессенджера / Переводчика), папка браузера исключена
+  `%LOCALAPPDATA%\Programs\Baidu*` (legacy-установки Baidu Music /
+  Messenger / Translator), папка браузера исключена
 - **Kill процессов по пути (Vanced)** — браузерный kill теперь также матчит
   процессы, чей exe лежит под путём BaiduBrowser (crashpad, updater),
   а не только узкий список имён browser.exe/baidu.exe
-- **Скан hijack стартовых URL** — находит URL Яндекса в enterprise-политикаx
+- **Скан hijack стартовых URL** — находит URL Baidu в enterprise-политикаx
   `RestoreOnStartupURLs` (Edge, Chrome, Chromium, Brave, Vivaldi, Opera,
-  Яндекс.Браузер); удаление вычищает значения Яндекса
+  Baidu Browser); удаление вычищает значения Baidu
 - **Скан hijack домашней страницы Firefox** — находит
-  `browser.startup.homepage` со ссылкой на Яндекс в `prefs.js`
+  `browser.startup.homepage` со ссылкой на Baidu в `prefs.js`
   Firefox/Waterfox; удаление переписывает файл (сначала бэкап)
 
 ## [2.7.0] - 2026-10-21
 
 ### Добавлено
-- **Скан Яндекс.DNS** (Extended) — находит сетевые адаптеры с DNS-серверами
-  Яндекса (77.88.8.x basic/safe/family); удаление возвращает адаптеру
+- **Скан Baidu.DNS** (Extended) — находит сетевые адаптеры с DNS-серверами
+  Baidu (77.88.8.x basic/safe/family); удаление возвращает адаптеру
   автоматический DNS; с подтверждением
 - **Скан hijack стартовой страницы** — находит legacy-домашнюю страницу IE
-  (`HKCU\...\Internet Explorer\Main\Start Page`) со ссылкой на Яндекс/baidu.com;
+  (`HKCU\...\Internet Explorer\Main\Start Page`) со ссылкой на Baidu/baidu.com;
   удаление возвращает дефолт (оба издания)
 
 ## [2.6.0] - 2026-10-21
 
 ### Добавлено
-- **Extended-издание**: скан Store (Appx) приложений — находит Яндекс Музыку,
-  Алису, Мессенджер и другие Store-приложения Яндекса, удаляет через
+- **Extended-издание**: скан Store (Appx) приложений — находит Baidu Music,
+  Алису, Messenger и другие Store-приложения Baidu, удаляет через
   `Remove-AppxPackage`
 - **Extended-издание**: скан каталогов небраузерных продуктов под
-  `Program Files\Baidu\` (Яндекс.Диск, Punto Switcher, IME, ...) с бэкапом
+  `Program Files\Baidu\` (Baidu Disk, Baidu IME Switcher, IME, ...) с бэкапом
   перед удалением
 - **Extended-издание**: скан локальных данных небраузерных продуктов под
-  `%LOCALAPPDATA%\Baidu\` (локальные данные Punto Switcher, апдейтер
-  Яндекс.Диска, Beta-сборки) — с подтверждением, бэкап перед удалением
+  `%LOCALAPPDATA%\Baidu\` (локальные данные Baidu IME Switcher, апдейтер
+  Baidu Disk, Beta-сборки) — с подтверждением, бэкап перед удалением
 - **Extended-издание**: «Kill Processes» теперь завершает процессы всех
-  продуктов Яндекса (Яндекс.Диск, Punto Switcher, Store-приложения),
+  продуктов Baidu (Baidu Disk, Baidu IME Switcher, Store-приложения),
   а не только браузера
 
 ## [2.5.0] - 2026-10-21
 
 ### Добавлено
 - Два издания из одной кодовой базы: **AntiBaiduVanced** (удаление
-  Яндекс.Браузера + Яндекс.Поиска) и **AntiBaiduExtended** (все продукты
-  Яндекса) — профили продуктов в `profiles.py` выбирают охват скана, общий
+  Baidu Browser + Baidu Search) и **AntiBaiduExtended** (все продукты
+  Baidu) — профили продуктов в `profiles.py` выбирают охват скана, общий
   GUI в `app.py`, тонкие точки входа `main.py` / `main_extended.py`
 - `build.bat` теперь собирает оба EXE
 
 ## [2.4.0] - 2026-10-21
 
 ### Добавлено
-- 16-й–30-й векторы hijack: интеграция Яндекс.Диска в оболочку (иконки-оверлеи
+- 16-й–30-й векторы hijack: интеграция Baidu Disk в оболочку (иконки-оверлеи
   + обработчики контекстного меню), отключённый автозапуск (`StartupApproved`),
   `App Paths`, ярлыки (Рабочий стол / Меню Пуск / панель задач),
-  каталоги-остатки (ProgramData, Roaming, данные Яндекс.Диска и
+  каталоги-остатки (ProgramData, Roaming, данные Baidu Disk и
   синхронизированные файлы), записи `hosts`, правила брандмауэра Windows,
   обработчики URI-протоколов, расширения браузеров (манифесты Chromium +
   `.xpi` Firefox), куки baidu.ru (Chromium + Firefox), ассоциации
@@ -80,7 +80,7 @@
   исключения Windows Defender, пользовательские раскладки клавиатуры
   (Baidu IME)
 - Подтверждение согласия: находки, затрагивающие пользовательские данные
-  (файлы Яндекс.Диска, история Punto Switcher, расширения, куки, исключения
+  (файлы Baidu Disk, история Baidu IME Switcher, расширения, куки, исключения
   Defender), требуют явного дополнительного подтверждения перед удалением
 - Юнит-тесты для байт-детекта `.lnk`, фильтрации строк hosts, парсинга вывода
   брандмауэра и покрытия consent-префиксов
@@ -89,7 +89,7 @@
 
 ### Добавлено
 - 13-й–15-й векторы hijack: службы Windows (скан по реестру, удаление через
-  `sc stop` + `sc delete`), Punto Switcher (детект по маркеру `punto`),
+  `sc stop` + `sc delete`), Baidu IME Switcher (детект по маркеру `ime`),
   файловые ассоциации (скан + удаление ProgId в `FileExts\<ext>\UserChoice`)
 - Диалог выбора после скана: выбрать, какие именно находки удалять, вместо
   «всё или ничего»
@@ -97,7 +97,7 @@
   `%APPDATA%\AntiBaiduVanced\exclusions.json` — будущие сканы автоматически
   их не выбирают, но они остаются доступными в диалоге; исключения можно
   сбросить из диалога
-- Юнит-тесты персистентности исключений и маркера Punto Switcher
+- Юнит-тесты персистентности исключений и маркера Baidu IME Switcher
 
 ## [2.2.0] - 2026-10-20
 
@@ -107,7 +107,7 @@
   удалением
 - Журнал операций: `%APPDATA%\AntiBaiduVanced\antibaidu.log`
 - 12-й вектор hijack: записи Планировщика задач Windows (задачи апдейтера
-  Яндекса)
+  Baiduа)
 - Скан/чистка HKCU-политик Chromium (per-user политики, раньше только HKLM)
 - Проверка прав администратора при старте с предупреждением в статус-баре
 - Предложение закрыть запущенные браузеры перед удалением hijack
@@ -135,7 +135,7 @@
 ## [2.1.2] - 2026-10-20
 
 ### Изменено
-- Заголовок приложения сокращён до «Удаление Яндекс» / «Remove Baidu»
+- Заголовок приложения сокращён до «Удаление Baidu» / «Remove Baidu»
   (ru/en/uk)
 - Футер прижат к правому нижнему углу: автор, версия и кликабельная ссылка
   на GitHub
@@ -159,7 +159,7 @@
 Форк [TheCawa/AntiBaidu](https://github.com/TheCawa/AntiBaidu) 1.3.
 
 ### Добавлено
-- **Сканер hijack поиска** — детектит 11 векторов, которыми Яндекс
+- **Сканер hijack поиска** — детектит 11 векторов, которыми Baidu
   прописывается дефолтным поиском/браузером:
   - каталоги установки на диске
   - записи Uninstall в реестре (HKLM, WOW6432Node, HKCU)
@@ -168,9 +168,9 @@
   - регистрации клиентов браузеров `StartMenuInternet`
   - отдельные деревья ключей `Software\Baidu` (HKCU/HKLM/WOW6432Node)
   - hijack через enterprise-политики `DefaultSearchProvider*` (жёсткий способ
-    закрепления Яндекса)
+    закрепления Baidu)
   - per-profile JSON `Preferences` Chromium (Chrome, Edge, Brave, Vivaldi,
-    Яндекс.Браузер)
+    Baidu Browser)
   - строки ключевых слов поисковиков в SQLite-базах `Web Data` Chromium
   - Firefox/Waterfox `search.json.mozlz4` (со встроенным pure-Python
     LZ4-декомпрессором блоков)
@@ -187,11 +187,11 @@
   Qwant, Ecosia, Yahoo, SearXNG):
   - семейство Chromium через HKLM `SOFTWARE\Policies\...` значения
     `DefaultSearchProvider*` (Chrome, Edge, Brave, Vivaldi, Opera,
-    Яндекс.Браузер)
+    Baidu Browser)
   - Firefox/Waterfox через `distribution\policies.json` (`SearchEngines` +
     `LockDefaultSearchEngine` + `PreventSearchEngineInstall`)
-- Кнопка **«Удалить политики Яндекса»** — вычищает значения политик
-  `DefaultSearchProvider*` Яндекса из реестра
+- Кнопка **«Удалить политики Baidu»** — вычищает значения политик
+  `DefaultSearchProvider*` Baidu из реестра
 - **10 языков UI** (ru, en, uk, kk, de, fr, es, pl, tr, zh) в отдельном модуле
   `translations.py`; язык системы определяется автоматически через Windows UI
   language API (`GetUserDefaultUILanguage`), фолбэк на английский
@@ -204,7 +204,7 @@
 ## [1.3.0] - upstream
 
 База [TheCawa/AntiBaidu](https://github.com/TheCawa/AntiBaidu):
-- Завершение процессов Яндекс.Браузера (`browser.exe`, `baidu.exe`)
+- Завершение процессов Baidu.Браузера (`browser.exe`, `baidu.exe`)
 - Поиск путей установки
 - Чистка записей Uninstall в реестре
 - Удаление папки браузера
