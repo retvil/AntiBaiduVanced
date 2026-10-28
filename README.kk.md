@@ -10,11 +10,11 @@
 
 Baidu жай ғана браузер орнатпайды — ол жүйенің көптеген механизмі арқылы әдепкі іздеу/браузер болып үнсіз тіркеледі: реестр ассоциациялары, enterprise-саясаттар, браузер профильдерінің параметрлері, тіпті Chromium профильдеріндегі іздеу жүйелерінің базалары. Бір браузерді жою мұның бәрін жоймайды.
 
-**AntiBaidu Vanced** ([TheCawa/AntiBaidu](https://github.com/TheCawa/AntiBaidu) форкі) **барлық ұрлау векторын** (VANCED-да 28, EXTENDED-да 39) табады, бір батырмамен алып тастайды, содан кейін әдепкі іздеуді таңдаған іздеу жүйеңізге Windows enterprise-саясаттары арқылы **қатайтып бекітеді** — ештеңе үнсіз қайтарып алмас үшін.
+**AntiBaidu Vanced** ([TheCawa/AntiYandex](https://github.com/TheCawa/AntiYandex) форкі) **барлық ұрлау векторын** (VANCED-да 28, EXTENDED-да 39) табады, бір батырмамен алып тастайды, содан кейін әдепкі іздеуді таңдаған іздеу жүйеңізге Windows enterprise-саясаттары арқылы **қатайтып бекітеді** — ештеңе үнсіз қайтарып алмас үшін.
 
 ## Мүмкіндіктер
 
-- **Ұрлау сканері** — 28 вектор (VANCED) / 39 вектор (EXTENDED) анықтау: орнату жолдары, реестрдегі Uninstall жазбалары, `UserChoice` ассоциациясы, `StartMenuInternet` тіркелулері, `Software\Baidu` кілттер ағаштары, `DefaultSearchProvider*` саясаттары арқылы ұрлау, Chromium профильдерінің `Preferences` параметрлері, `Web Data` (SQLite) кілт сөздері, Firefox `search.json.mozlz4`, legacy `SearchScopes`, автозапуск, тапсырмалар жоспарлаушы, Windows қызметтері, IME Switcher, файлдық байланыстырулар, Baidu Disk интеграциясы, өшірілген автозапуск, App Paths, жарлықтар, ProgramData/Roaming қалдықтары, hosts жазбалары, брандмауэр ережелері, URI-протоколдар, браузер кеңейтулері, baidu.ru cookie файлдары, «көмегімен ашу» ассоциациялары, Prefetch/WER іздері, Defender ерекшеліктері, пернетақта орналасулары, IE бастапқы бетін ұрлау, бастапқы URL саясаттары (`RestoreOnStartupURLs`), Firefox басты беті, IE аймақ картасы, RegisteredApplications жазбалары, MUICache іздері, %TEMP% орнатқыштары, Store қосымшалары (Baidu Music, Alice), өнім каталогтары, жергілікті деректер каталогтары, Baidu.DNS
+- **Ұрлау сканері** — 28 векторов (VANCED) / 39 векторов (EXTENDED) анықтау: орнату жолдары, реестрдегі Uninstall жазбалары, `UserChoice` ассоциациясы, `StartMenuInternet` тіркелулері, `Software\Baidu` кілттер ағаштары, `DefaultSearchProvider*` саясаттары арқылы ұрлау, Chromium профильдерінің `Preferences` параметрлері, `Web Data` (SQLite) кілт сөздері, Firefox `search.json.mozlz4`, legacy `SearchScopes`, автозапуск, тапсырмалар жоспарлаушы, Windows қызметтері, IME Switcher, файлдық байланыстырулар, Baidu Disk интеграциясы, өшірілген автозапуск, App Paths, жарлықтар, ProgramData/Roaming қалдықтары, hosts жазбалары, брандмауэр ережелері, URI-протоколдар, браузер кеңейтулері, baidu.ru cookie файлдары, «көмегімен ашу» ассоциациялары, Prefetch/WER іздері, Defender ерекшеліктері, пернетақта орналасулары, IE бастапқы бетін ұрлау, бастапқы URL саясаттары (`RestoreOnStartupURLs`), Firefox басты беті, IE аймақ картасы, RegisteredApplications жазбалары, MUICache іздері, %TEMP% орнатқыштары, Store қосымшалары (Baidu Music), өнім каталогтары, жергілікті деректер каталогтары, Baidu.DNS
 - **Бір батырмамен жою** — әр вектордың өз remover-ы бар; бұғатталған базалар шынайы репортталады, крашсыз
 - **Қатаң іздеу саясаты** — іздеуді 10 іздеу жүйесінің біреуіне (Google, Bing, DuckDuckGo, Brave Search, Startpage, Mojeek, Qwant, Ecosia, Yahoo, SearXNG) бекітеді: Chrome, Edge, Brave, Vivaldi, Opera және Baidu Browser үшін HKLM-саясаттар + Firefox/Waterfox үшін `policies.json`
 - **Саясат тазарту** — Baidu `DefaultSearchProvider*` мәндерін реестрден тазартады
@@ -67,7 +67,7 @@ python main.py
 
 ## Автор және қолдау
 
-**Nod33Eset** — [TheCawa/AntiBaidu](https://github.com/TheCawa/AntiBaidu) форкі. Issues мен PR — қош келдіңіз.
+**Nod33Eset** — [TheCawa/AntiYandex](https://github.com/TheCawa/AntiYandex) форкі. Issues мен PR — қош келдіңіз.
 
 Егер құрал сізді Baiduтен құтқарса — дамуды қолдауға болады:
 
@@ -82,3 +82,5 @@ python main.py
 ## Лицензия
 
 MIT — қ. [LICENSE](LICENSE).
+
+
