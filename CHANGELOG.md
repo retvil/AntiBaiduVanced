@@ -42,7 +42,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.6.0] - 2026-10-21
 
 ### Added
-- **Extended edition**: Store (Appx) app scan — detects Baidu Music, Alice,
+- **Extended edition**: Store (Appx) app scan — detects Baidu Music, Messenger,
   Messenger and other Baidu Store apps, removes them via `Remove-AppxPackage`
 - **Extended edition**: non-browser product directory scan under
   `Program Files\Baidu\` (Baidu Disk, IME Switcher, IME, ...) with

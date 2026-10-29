@@ -67,7 +67,7 @@ _EXTENDED_ONLY: frozenset[str] = frozenset({
     "scan_firewall_rules",
     "scan_defender_exclusions",
     "scan_keyboard_layouts",     # Baidu IME
-    "scan_store_apps",           # Baidu Music / Alice / Messenger (Appx)
+    "scan_store_apps",           # Baidu Music / Messenger / Messenger (Appx)
     "scan_product_dirs",         # Program Files\Baidu\* non-browser products
     "scan_local_data_dirs",      # %LOCALAPPDATA%\Baidu\* non-browser data
     "scan_dns_servers",          # Baidu.DNS (77.88.8.x) in network adapters
