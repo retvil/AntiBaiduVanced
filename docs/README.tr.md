@@ -26,7 +26,7 @@ Baidu yalnızca bir tarayıcı kurmaz — kırk farklı sistem mekanizmasıyla s
 <details>
 <summary>Ana pencere</summary>
 
-![AntiBaiduVanced ana penceresi](docs/screenshot.png)
+![AntiBaiduVanced ana penceresi](screenshot.png)
 
 </details>
 
@@ -81,7 +81,7 @@ Araç sizi Baidu'ten kurtardıysa, geliştirmeyi destekleyebilirsiniz:
 
 ## Lisans
 
-MIT — bkz. [LICENSE](LICENSE).
+MIT — bkz. [LICENSE](../LICENSE).
 
 
 

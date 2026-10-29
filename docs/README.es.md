@@ -26,7 +26,7 @@ Baidu no instala solo un navegador — se registra silenciosamente como buscador
 <details>
 <summary>Ventana principal</summary>
 
-![Ventana principal de AntiBaiduVanced](docs/screenshot.png)
+![Ventana principal de AntiBaiduVanced](screenshot.png)
 
 </details>
 
@@ -81,7 +81,7 @@ Si la herramienta te libró de Baidu, puedes apoyar el desarrollo:
 
 ## Licencia
 
-MIT — ver [LICENSE](LICENSE).
+MIT — ver [LICENSE](../LICENSE).
 
 
 

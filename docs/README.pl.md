@@ -26,7 +26,7 @@ Baidu nie instaluje tylko przeglądarki — po cichu rejestruje się jako domyś
 <details>
 <summary>Okno główne</summary>
 
-![Okno główne AntiBaiduVanced](docs/screenshot.png)
+![Okno główne AntiBaiduVanced](screenshot.png)
 
 </details>
 
@@ -81,7 +81,7 @@ Jeśli narzędzie uwolniło Cię od Baidua — możesz wesprzeć rozwój:
 
 ## Licencja
 
-MIT — zob. [LICENSE](LICENSE).
+MIT — zob. [LICENSE](../LICENSE).
 
 
 

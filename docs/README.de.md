@@ -26,7 +26,7 @@ Baidu installiert nicht nur einen Browser — es trägt sich still über vierzig
 <details>
 <summary>Hauptfenster</summary>
 
-![AntiBaiduVanced Hauptfenster](docs/screenshot.png)
+![AntiBaiduVanced Hauptfenster](screenshot.png)
 
 </details>
 
@@ -81,7 +81,7 @@ Wenn dich das Tool von Baidu befreit hat, kannst du die Entwicklung unterstütze
 
 ## Lizenz
 
-MIT — siehe [LICENSE](LICENSE).
+MIT — siehe [LICENSE](../LICENSE).
 
 
 
