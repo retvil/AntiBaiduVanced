@@ -1,6 +1,6 @@
 # AntiBaidu Vanced
 
-[![v1.1.0](https://img.shields.io/badge/version-1.1.0-brightgreen)](https://github.com/retvil/AntiBaiduVanced/releases) [![Platform Windows](https://img.shields.io/badge/platform-Windows-blue)](https://github.com/retvil/AntiBaiduVanced/releases) [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
+[![v1.2.0](https://img.shields.io/badge/version-1.2.0-brightgreen)](https://github.com/retvil/AntiBaiduVanced/releases) [![Platform Windows](https://img.shields.io/badge/platform-Windows-blue)](https://github.com/retvil/AntiBaiduVanced/releases) [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
 
 **Remove Baidu Browser completely and lock your default search against hijacking — 28 detection vectors (VANCED) / 39 detection vectors (EXTENDED), 10 search engines, 10 UI languages.**
 
@@ -32,7 +32,7 @@ Baidu doesn't just install a browser — it quietly registers itself as the defa
 <details>
 <summary>Main window</summary>
 
-![AntiBaiduVanced main window](docs/screenshot.png)
+![AntiBaiduVanced main window`](docs/screenshot.png)
 
 </details>
 
@@ -88,6 +88,10 @@ If the tool saved you from Baidu, you can support development:
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+
+
+
 
 
 
