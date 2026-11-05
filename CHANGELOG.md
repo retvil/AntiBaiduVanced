@@ -1,3 +1,9 @@
+## [1.4.0] - 2026-11-06
+
+### Changed
+- Language switch simplified to a single dropdown (removed the flag-icon strip, flag line, and language label)
+- Bumped app version to 1.4.0
+
 ## [1.3.0] - 2026-11-05
 
 ### Added
@@ -206,6 +212,7 @@ Baseline from [retvil/AntiYandexVanced](https://github.com/retvil/AntiYandexVanc
 [2.1.2]: https://github.com/retvil/AntiBaiduVanced/compare/v2.1.0...v2.1.2
 [2.1.0]: https://github.com/retvil/AntiBaiduVanced/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/retvil/AntiBaiduVanced/compare/v1.3.0...v2.0.0
+
 
 
 

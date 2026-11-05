@@ -27,7 +27,7 @@ import updater
 import watchdog
 import baidu_detect
 
-APP_VERSION = "1.3.0"
+APP_VERSION = "1.4.0"
 APP_AUTHOR = "Nod33Eset"
 GITHUB_URL = "https://github.com/retvil/AntiBaiduVanced"
 
@@ -634,4 +634,5 @@ def run(profile_name: str) -> None:
     root.after(800, check_update_ui)
 
     root.mainloop()
+
 
