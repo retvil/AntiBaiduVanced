@@ -57,7 +57,6 @@ engine_menu: ttk.Combobox
 
 last_findings: list[str] = []
 
-
 def t(key):
     return translations.t(language, key)
 
@@ -444,7 +443,7 @@ def run(profile_name: str) -> None:
     global root, status_label, findings_box, engine_menu, main_label
     global btn_check, btn_registry, btn_kill, btn_delete
     global btn_hijack, btn_hijack_remove, policy_card, hijack_card, maint_card
-    global btn_policy, btn_unbaidu_policy, lang_label
+    global btn_policy, btn_unbaidu_policy
     global btn_restore, btn_export, chk_watchdog
 
     PROFILE = profiles.validate(profile_name)
@@ -554,7 +553,7 @@ def run(profile_name: str) -> None:
                 break
         update_ui()
 
-    # Language selector: top-right corner
+    # Language selector: single dropdown, top-right corner
     lang_bar = ttk.Frame(root, padding=(20, 10, 20, 0))
     lang_bar.pack(fill="x")
 
@@ -565,9 +564,6 @@ def run(profile_name: str) -> None:
     lang_menu.set(translations.LANG_DISPLAY_NAMES[language])
     lang_menu.bind("<<ComboboxSelected>>", on_language_change)
     lang_menu.pack(side="right")
-
-    lang_label = ttk.Label(lang_bar, font=("Segoe UI", 11), foreground=TEXT_MUTED)
-    lang_label.pack(side="right", padx=(0, 8))
 
     # Title centered
     main_label = ttk.Label(root, font=("Segoe UI", 18, "bold"), anchor="center")
@@ -626,7 +622,6 @@ def run(profile_name: str) -> None:
         btn_restore.configure(text=t("restore_btn"))
         btn_export.configure(text=t("export_btn"))
         chk_watchdog.configure(text=t("watchdog_label"))
-        lang_label.configure(text=t("lang_label"))
         update_status(t("status_wait"))
         _render_findings([])  # stale findings are in the previous language
 
@@ -639,7 +634,4 @@ def run(profile_name: str) -> None:
     root.after(800, check_update_ui)
 
     root.mainloop()
-
-
-
 
